@@ -1,0 +1,3 @@
+[submodule "Scripts/ETLModules"]
+	path = Scripts/ETLModules
+	url = git@github.com:nebraska-silicon-lab/gscript-ETLModules.git
