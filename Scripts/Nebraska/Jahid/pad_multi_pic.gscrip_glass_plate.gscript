@@ -1,0 +1,22 @@
+#HOME
+#MPGON
+#VIDEO "gantryhead"
+#SETVAC module_chuck_0_slot_1 1
+#COPY $focus_range 0.5 # mm
+#AUTOFOCUS $_ $focus_range 0.1
+
+HOME
+#COPY $focus_range 0.7 # mm
+COPY $tot_num 198
+MOVETO {221.436128,91.187723,78.816524} {15.00,10.00,1.00}
+COPY $step {0.0000715175809,-0.100608,-0.0000006}
+COPY $counter $tot_num
+@LOOP
+    SUB $num $tot_num $counter
+    #AUTOFOCUS $_ $focus_range 0.9 autoclose
+    SNAPSHOT gantryhead "MH0152_glass_left_pad_{$num}.png"
+    MOVEREL $step
+    PRINT "aa"
+    DEC $counter $counter
+    GOTOIF @LOOP $counter
+

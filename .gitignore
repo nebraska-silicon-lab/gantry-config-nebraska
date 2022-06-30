@@ -1,1 +1,6 @@
+# Exclude Log files
 Logs/
+
+
+# Exclude compile Aerotech scripts
+*.OGM
