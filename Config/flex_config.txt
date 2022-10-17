@@ -2,9 +2,8 @@
 #====== Hardware configuration
 #================================================
 camera.gantryhead.CameraGroup: 1
-camera.gantryhead.VendorName: UI327xCP-M_4103643853
-camera.gantryhead.SerialNumberHigh: 0xA4C207BC
-camera.gantryhead.SerialNumberLow: 0x2D82C3C8
+camera.gantryhead.driver: ueye
+camera.gantryhead.serial_number: "4103643853"
 camera.gantryhead.FOV-x: 1.400
 camera.gantryhead.FOV-y: 1.048
 camera.gantryhead.horizontalMirror: False
@@ -465,4 +464,54 @@ stamp_info.apply_time: 1000
 #these are for applying the weight!
 weight.horizontal: {30,0,0}
 weight.vertical: {0,0,-50}
+
+
+#============================
+# addition for CROC
+#============================
+vacuum.module_chuck_0_slot_1: 24
+vacuum.module_chuck_0_slot_2: 18
+
+geometry.TFPX_CROC_MULTIGLASS.fid_tr: {9.214,-10.328,0}
+geometry.TFPX_CROC_MULTIGLASS.fid_br: {9.214,10.328,0}
+geometry.TFPX_CROC_MULTIGLASS.fid_bl: {-9.214,10.328,0}
+geometry.TFPX_CROC_MULTIGLASS.fid_tl: {-9.214,-10.328,0}
+geometry.TFPX_CROC_MULTIGLASS.thickness: 0.513
+geometry.TFPX_CROC_SINGLEGLASS.thickness: 0.500
+
+geometry.TFPX_CROC_HDI.thickness: 0.290
+
+geometry.TFPX_CROC_DUALROC.fid_tr: {0,-0,0}
+geometry.TFPX_CROC_DUALROC.fid_br: {0,0,0}
+geometry.TFPX_CROC_DUALROC.fid_bl: {-0,0,0}
+geometry.TFPX_CROC_DUALROC.fid_tl: {-0,-0,0}
+geometry.TFPX_CROC_DUALROC.thickness: 0.808
+
+###Information for the CROC HDI
+siteGeometry.pos_croc_hdi_top1: {161.944,527.411,99.862}
+siteGeometry.pos_croc_hdi_top2: {161.887,549.563,99.793}
+siteGeometry.dist_hdi_bondpads: 43.040 #mm
+siteGeometry.dist_hdi_half_bondpads: 16.803 #mm
+# CROC HDI pick and place translation vector and rotation angle
+siteGeometry.croc_v_translation: {-100.253,0.0368431,-6.478}
+siteGeometry.croc_rot_translation: 0.1617344
+
+### Information for the CROC Single Glass Script
+siteGeometry.pos_croc_singleGlass_top1: {111.536,523.868,99.627}
+siteGeometry.dist_singleGlass_bondpads: 41.503 #mm
+# Vector from center of the bond pads to the center of the Single Glass Piece (at rot = 0)
+siteGeometry.singleGlass_bondsToCenter: {9.3372,-0.0036,0}
+
+### Information for the CROC Multi Glass Script
+siteGeometry.pos_croc_TOPGlass_top1: {111.517,523.762,99.772}
+siteGeometry.pos_croc_BOTGlass_top1: {111.064,552.390,99.737}
+siteGeometry.dist_multiGlass_bondpads: 19.698 #mm
+
+### Information for the CROC Dual ROC Script
+siteGeometry.pos_croc_TOPROC_top1: {111.897,522.777,99.282}
+siteGeometry.pos_croc_BOTROC_top1: {111.425,552.308,99.282}
+siteGeometry.dist_dualROC_bondpads: 21.064 #mm
+# Vector from center of the bond pads on one Dual ROC to its center
+siteGeometry.dualROC_bondsToCenter: {9.228,0,0}
+
 
