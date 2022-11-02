@@ -16,8 +16,8 @@ light.gantryhead.hardware_address: Y.0
 
 vacuum.gantry_head_outer: 14
 vacuum.gantry_head_inner: 15
-vacuum.module_chuck_0_slot_1: 4
-# vacuum.module_chuck_0_slot_2: 
+#vacuum.module_chuck_0_slot_1: 4
+#vacuum.module_chuck_0_slot_2: 
 vacuum.etl_chuck_1: 7
 vacuum.etl_chuck_2: 8
 vacuum.etl_chuck_3: 9
@@ -133,10 +133,10 @@ geometry.TFPX_RD53AQUARTERROC.fid_bl: {-5.7635,10.025,0}
 geometry.TFPX_RD53AQUARTERROC.fid_tl: {-5.7635,-10.025,0}
 geometry.TFPX_RD53AQUARTERROC.thickness: 0.505
 
-geometry.ETL_AL_Mockup.fid_tr: {21.9,-11.39,0}
-geometry.ETL_AL_Mockup.fid_tl: {-21.9,-11.39,0}
-geometry.ETL_AL_Mockup.fid_bl: {-21.9,11.39,0}
-geometry.ETL_AL_Mockup.fid_br: {21.9,11.39,0}
+geometry.ETL_AlN_Baseplate.fid_tr: {28.22,-21.51,0}
+geometry.ETL_AlN_Baseplate.fid_tl: {-28.22,-21.51,0}
+geometry.ETL_AlN_Baseplate.fid_bl: {-28.22,21.51,0}
+geometry.ETL_AlN_Baseplate.fid_br: {28.22,21.51,0}
 
 geometry.ETL_Sensor_PCB_Mockup.fid_tr: {18.88,-9.14,0}
 geometry.ETL_Sensor_PCB_Mockup.fid_tl: {-18.88,-9.14,0}
@@ -364,8 +364,6 @@ graph_motion.edge.tool_rack_pos_0_out.stagingArea: True
 # default.part_type.chuck_id.pos_id.pos/rot
 #default.ETL_mock_base.3.1.pos: {776.211566,318.647663,78.942527}
 #default.ETL_mock_base.3.1.rot: {0.000487,0.000002,-0.003824,-0.999993}
-default.ETL_mock_base.3.2.pos: {10,10,10}
-default.ETL_mock_base.3.2.rot: {0,0,0,1}
 
 #default.ETL_Sensor_PCB_Mockup.4.1.pos: {646.167729,110.076103,75.537859}
 #default.ETL_Sensor_PCB_Mockup.4.1.rot: {0.000000,-0.000000,0.002087,0.999998}
@@ -469,8 +467,37 @@ weight.vertical: {0,0,-50}
 #============================
 # addition for CROC
 #============================
-vacuum.module_chuck_0_slot_1: 24
-vacuum.module_chuck_0_slot_2: 18
+#vacuum.croc_chuck_1_top: 4
+#vacuum.croc_chuck_0_top: 4
+#vacuum.croc_chuck_1_bot: 5
+#vacuum.croc_chuck_0_bot: 5
+#vacuum.croc_chuck_2_top: 6
+#vacuum.croc_chuck_2_bot: 8
+#vacuum.croc_launchROC_top: 6
+#vacuum.croc_launchROC_bot: 8
+#vacuum.croc_chuck_3: 9
+#vacuum.croc_launchHDI: 9
+#vacuum.croc_hdipicker: 10
+#vacuum.croc_weight_0: 10
+#vacuum.module_chuck_0_slot_1: 24
+#vacuum.module_chuck_0_slot_2: 18
+
+vacuum.croc_chuck_0_top: 28
+vacuum.croc_chuck_0_bot: 29
+vacuum.croc_chuck_1_top: 28
+vacuum.croc_chuck_1_bot: 29
+vacuum.croc_chuck_2_top: 30
+vacuum.croc_chuck_2_bot: 31
+vacuum.croc_launchROC_top: 0
+vacuum.croc_launchROC_bot: 0
+vacuum.croc_chuck_3: 4
+vacuum.croc_launchHDI: 0
+vacuum.croc_hdipicker: 6
+vacuum.croc_weight_0: 0
+vacuum.module_chuck_0_slot_1: 0
+vacuum.module_chuck_0_slot_2: 0
+
+
 
 geometry.TFPX_CROC_MULTIGLASS.fid_tr: {9.214,-10.328,0}
 geometry.TFPX_CROC_MULTIGLASS.fid_br: {9.214,10.328,0}
@@ -486,32 +513,50 @@ geometry.TFPX_CROC_DUALROC.fid_br: {0,0,0}
 geometry.TFPX_CROC_DUALROC.fid_bl: {-0,0,0}
 geometry.TFPX_CROC_DUALROC.fid_tl: {-0,-0,0}
 geometry.TFPX_CROC_DUALROC.thickness: 0.808
+geometry.dist_dualHDI_bondpads: 21.216 #mm
+geometry.dist_dualROC_bondpads: 21.064 #mm
+
 
 ###Information for the CROC HDI
-siteGeometry.pos_croc_hdi_top1: {161.944,527.411,99.862}
-siteGeometry.pos_croc_hdi_top2: {161.887,549.563,99.793}
+siteGeometry.pos_croc_hdi_top1: {286.402,69.943,73.700}
+siteGeometry.pos_croc_hdi_top2: {286.402,69.943,73.700}
 siteGeometry.dist_hdi_bondpads: 43.040 #mm
 siteGeometry.dist_hdi_half_bondpads: 16.803 #mm
 # CROC HDI pick and place translation vector and rotation angle
 siteGeometry.croc_v_translation: {-100.253,0.0368431,-6.478}
 siteGeometry.croc_rot_translation: 0.1617344
+siteGeometry.croc_v_translation_STAT_0: {-100.253,0.0368431,-6.478}
+siteGeometry.croc_rot_translation_STAT_0: 0.1617344
 
 ### Information for the CROC Single Glass Script
-siteGeometry.pos_croc_singleGlass_top1: {111.536,523.868,99.627}
+siteGeometry.pos_croc_singleGlass_top1: {234.417,70.402,73.440}
 siteGeometry.dist_singleGlass_bondpads: 41.503 #mm
 # Vector from center of the bond pads to the center of the Single Glass Piece (at rot = 0)
 siteGeometry.singleGlass_bondsToCenter: {9.3372,-0.0036,0}
 
+#Fine correction for the CROC thermal mockup
+siteGeometry.delta_singleGlass: {0,0,0}
+siteGeometry.delta_TOPGlass: {0,-0.1,0}
+siteGeometry.delta_BOTGlass: {0,0.1,0}
+
 ### Information for the CROC Multi Glass Script
-siteGeometry.pos_croc_TOPGlass_top1: {111.517,523.762,99.772}
-siteGeometry.pos_croc_BOTGlass_top1: {111.064,552.390,99.737}
+siteGeometry.pos_croc_TOPGlass_top1: {243.079,89.764,50.000}
+siteGeometry.pos_croc_BOTGlass_top1: {243.079,89.764,50.000}
 siteGeometry.dist_multiGlass_bondpads: 19.698 #mm
 
 ### Information for the CROC Dual ROC Script
-siteGeometry.pos_croc_TOPROC_top1: {111.897,522.777,99.282}
-siteGeometry.pos_croc_BOTROC_top1: {111.425,552.308,99.282}
+siteGeometry.pos_croc_TOPROC_top1: {243.079,89.764,50.000}
+siteGeometry.pos_croc_BOTROC_top1: {243.079,89.764,50.000}
+siteGeometry.delta_TOPROC: {0,0,0}
+siteGeometry.delta_BOTROC: {0,0,0}
+
 siteGeometry.dist_dualROC_bondpads: 21.064 #mm
 # Vector from center of the bond pads on one Dual ROC to its center
 siteGeometry.dualROC_bondsToCenter: {9.228,0,0}
 
+graph_motion.pos.crocStaging: {100,400,0}
+graph_motion.edge.home.crocStaging: True
+graph_motion.edge.crocStaging.home: True
+graph_motion.edge.safeUnload.crocStaging: True
+graph_motion.edge.crocStaging.safeUnload: True
 
