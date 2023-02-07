@@ -190,10 +190,14 @@ siteGeometry.pos_TLsenRoc_launch_tr: {303.730927,70.461951,78.993867}
 
 
 # Positions of top right corners of the 4 ROCs (red/yellow) on Launch 2
-siteGeometry.pos_TR_ROC_launch2_tr: {323.982479,70.400962,78.958873}
-siteGeometry.pos_BR_ROC_launch2_tr: {322.997896,91.134026,79.073876}
-siteGeometry.pos_BL_ROC_launch2_tr: {303.341593,91.877042,78.993873}
-siteGeometry.pos_TL_ROC_launch2_tr: {303.730927,70.461951,78.993867}
+#siteGeometry.pos_TR_ROC_launch2_tr: {323.982479,70.400962,78.958873}
+#siteGeometry.pos_BR_ROC_launch2_tr: {322.997896,91.134026,79.073876}
+#siteGeometry.pos_BL_ROC_launch2_tr: {303.341593,91.877042,78.993873}
+#siteGeometry.pos_TL_ROC_launch2_tr: {303.730927,70.461951,78.993867}
+siteGeometry.pos_TR_ROC_launch2_tr: {254.936,71.441,73.155}
+siteGeometry.pos_BR_ROC_launch2_tr: {254.245,93.299,73.165}
+siteGeometry.pos_BL_ROC_launch2_tr: {241.395,93.527,73.125}
+siteGeometry.pos_TL_ROC_launch2_tr: {241.898,71.202,73.140}
 
 # HDI pick and place translation vector and rotation angle
 siteGeometry.v_hdi_translation: {-50.03,-0.2396,-7.019}
@@ -209,10 +213,11 @@ siteGeometry.rot_ROC_error: 0
 
  # Fine correction for the ROCs to align bond pads with HDI bond pads
  ### DO NOT GO BELOW 0.03 mm ###
-siteGeometry.delta_tr: {-0.035,0.070,0} # {length > 0.03,width > 0.03}
-siteGeometry.delta_br: {0.155,0.05,0} # {length > 0.03,width > 0.03}
-siteGeometry.delta_bl: {0.143,0.07,0} # {length > 0.03,width > 0.03}
-siteGeometry.delta_tl: {-0.023,0.050,0} # {length > 0.03,width > 0.03}
+#20230206 +0.03 for all? do dry run
+siteGeometry.delta_tr: {0.06,0.07,0} # {length > 0.03,width > 0.03}
+siteGeometry.delta_br: {0.06,0.07,0} # {length > 0.03,width > 0.03}
+siteGeometry.delta_bl: {-0.04,0.07,0} # {length > 0.03,width > 0.03}
+siteGeometry.delta_tl: {0.16,0.07,0} # {length > 0.03,width > 0.03}
 
  #Fine correction for the 1x2 Thermal Mockups to align with the HDI
  ### DO NOT CHANGE - NOT TESTED YET ###
