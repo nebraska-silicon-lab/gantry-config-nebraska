@@ -1,9 +1,12 @@
 #================================================
 #====== Hardware configuration
 #================================================
+
+enable_imaqdx: True
+
 camera.gantryhead.CameraGroup: 1
-camera.gantryhead.driver: ueye
-camera.gantryhead.serial_number: "4103643853"
+camera.gantryhead.driver: imaqdx
+camera.gantryhead.serial_number: "UI327xCP-M_4103643853 |  | 11872060072500839368"
 camera.gantryhead.FOV-x: 1.400
 camera.gantryhead.FOV-y: 1.048
 camera.gantryhead.horizontalMirror: False
@@ -214,10 +217,10 @@ siteGeometry.rot_ROC_error: 0
  # Fine correction for the ROCs to align bond pads with HDI bond pads
  ### DO NOT GO BELOW 0.03 mm ###
 #20230206 +0.03 for all? do dry run
-siteGeometry.delta_tr: {0.06,0.07,0} # {length > 0.03,width > 0.03}
-siteGeometry.delta_br: {0.06,0.07,0} # {length > 0.03,width > 0.03}
-siteGeometry.delta_bl: {-0.04,0.07,0} # {length > 0.03,width > 0.03}
-siteGeometry.delta_tl: {0.16,0.07,0} # {length > 0.03,width > 0.03}
+siteGeometry.delta_tr: {0.00,0.06,0} # {length > 0.03,width > 0.03}
+siteGeometry.delta_br: {0.12,0.06,0} # {length > 0.03,width > 0.03}
+siteGeometry.delta_bl: {0.00,0.06,0} # {length > 0.03,width > 0.03}
+siteGeometry.delta_tl: {0.12,0.06,0} # {length > 0.03,width > 0.03}
 
  #Fine correction for the 1x2 Thermal Mockups to align with the HDI
  ### DO NOT CHANGE - NOT TESTED YET ###
