@@ -6,7 +6,9 @@
 # ETLModules/Throughput
 
 #chuck numbers
+# Bottom is the chuck that holds the assembly plate
 chuck_number.bottom: 3
+# Top is the 16-pocket chuck that stages the ETROC+LGAD subassemblies as well as the baseplates
 chuck_number.top: 4
 
 default.Module_PCB.3.1.pos: {649.703701,298.164172,63.961246}
