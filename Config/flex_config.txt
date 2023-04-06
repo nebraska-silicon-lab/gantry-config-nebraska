@@ -88,7 +88,7 @@ manifold.port.29: cDAQ1Mod1/port0/line29
 manifold.port.30: cDAQ1Mod1/port0/line30
 manifold.port.31: cDAQ1Mod1/port0/line31
 
-motion.travel_speed: 100  # mm/s
+motion.travel_speed: 150  # mm/s
 
 tool_rack.0: picker_tool
 tool_rack.1: grabber_tool
@@ -96,7 +96,7 @@ tool_rack.2: etl_picker_tool
 
 tool_exchange_vacuum_delay: 2500  # ms
 
-survey_image_delay: 0  # ms
+survey_image_delay: 200  # ms
 survey_movement_speed: 20  # mm/s
 
 #================================================
@@ -141,17 +141,19 @@ geometry.ETL_AlN_Baseplate.fid_tl: {-28.22,-21.51,0}
 geometry.ETL_AlN_Baseplate.fid_bl: {-28.22,21.51,0}
 geometry.ETL_AlN_Baseplate.fid_br: {28.22,21.51,0}
 
-geometry.ETL_Sensor_PCB_Mockup.fid_tr: {18.88,-9.14,0}
-geometry.ETL_Sensor_PCB_Mockup.fid_tl: {-18.88,-9.14,0}
-geometry.ETL_Sensor_PCB_Mockup.fid_bl: {-18.88,9.14,0}
-geometry.ETL_Sensor_PCB_Mockup.fid_br: {18.88,9.14,0}
+#OLD? not for throughput
+#geometry.ETL_Sensor_PCB_Mockup.fid_tr: {18.88,-9.14,0}
+#geometry.ETL_Sensor_PCB_Mockup.fid_tl: {-18.88,-9.14,0}
+#geometry.ETL_Sensor_PCB_Mockup.fid_bl: {-18.88,9.14,0}
+#geometry.ETL_Sensor_PCB_Mockup.fid_br: {18.88,9.14,0}
 geometry.ETL_Sensor_PCB_Mockup.size_x: 45
 geometry.ETL_Sensor_PCB_Mockup.size_y: 20
 
-geometry.ETL_mock_base.fid_tr: {27.25, -20.55, 0}
-geometry.ETL_mock_base.fid_tl: {-27.25, -20.55, 0}
-geometry.ETL_mock_base.fid_bl: {-27.25, 20.55, 0}
-geometry.ETL_mock_base.fid_br: {27.25, 20.55, 0}
+#OLD? not for throughput
+#geometry.ETL_mock_base.fid_tr: {27.25, -20.55, 0}
+#geometry.ETL_mock_base.fid_tl: {-27.25, -20.55, 0}
+#geometry.ETL_mock_base.fid_bl: {-27.25, 20.55, 0}
+#geometry.ETL_mock_base.fid_br: {27.25, 20.55, 0}
 
 #geometry.PICKER_TOOL.center_offset: {0,0,53.6} #small suction cup
 #geometry.PICKER_TOOL.center_offset: {0,0,59.5} #middle suction cup
@@ -217,10 +219,10 @@ siteGeometry.rot_ROC_error: 0
  # Fine correction for the ROCs to align bond pads with HDI bond pads
  ### DO NOT GO BELOW 0.03 mm ###
 #20230206 +0.03 for all? do dry run
-siteGeometry.delta_tr: {0.00,0.06,0} # {length > 0.03,width > 0.03}
-siteGeometry.delta_br: {0.12,0.06,0} # {length > 0.03,width > 0.03}
-siteGeometry.delta_bl: {0.00,0.06,0} # {length > 0.03,width > 0.03}
-siteGeometry.delta_tl: {0.12,0.06,0} # {length > 0.03,width > 0.03}
+siteGeometry.delta_tr: {0.08,0.09,0} # {length > 0.03,width > 0.03}
+siteGeometry.delta_br: {0.09,0.15,0} # {length > 0.03,width > 0.03}
+siteGeometry.delta_bl: {0.12,0.00,0} # {length > 0.03,width > 0.03}
+siteGeometry.delta_tl: {0.03,0.06,0} # {length > 0.03,width > 0.03}
 
  #Fine correction for the 1x2 Thermal Mockups to align with the HDI
  ### DO NOT CHANGE - NOT TESTED YET ###
@@ -235,10 +237,10 @@ geometry.TFPX_RD53AHDI.thickness: 0.241
 geometry.TFPX_RD53AHDI.dim_bondHDI: {9.843,19.711,0}  #(width,length) # Dimensions of the HDI Bond Pads
 geometry.TFPX_RD53AHDI.len_bondpad_HDI: 0.77
 
-geometry.TFPX_RD53ASENSORROC.fid_tr: {12.0,-20.5,0}
-geometry.TFPX_RD53ASENSORROC.fid_br: {12.0,20.5,0}s
-geometry.TFPX_RD53ASENSORROC.fid_bl: {-12.0,20.5,0}
-geometry.TFPX_RD53ASENSORROC.fid_tl: {-12.0,-20.5,0}
+#geometry.TFPX_RD53ASENSORROC.fid_tr: {12.0,-20.5,0}
+#geometry.TFPX_RD53ASENSORROC.fid_br: {12.0,20.5,0}
+#geometry.TFPX_RD53ASENSORROC.fid_bl: {-12.0,20.5,0}
+#geometry.TFPX_RD53ASENSORROC.fid_tl: {-12.0,-20.5,0}
 
 geometry.TFPX_RD53AGLASSDIM: {20.044,11.859, 0} #(length, width)
 
@@ -259,6 +261,13 @@ geometry.stamp_1.center_rotation: 0 #deg
 geometry.stamp_2.center_offset: {-1.079,1.159,0} #check if negatives make sense! not tested....
 geometry.stamp_2.center_rotation: -0.064 #deg
 
+
+geometry.TFPX_RD53ASENSORROC.fid_tr: {11.835,-20.175,0}
+geometry.TFPX_RD53ASENSORROC.fid_br: {11.835,20.175,0}
+geometry.TFPX_RD53ASENSORROC.fid_bl: {-11.835,20.175,0}
+geometry.TFPX_RD53ASENSORROC.fid_tl: {-11.835,-20.175,0}
+geometry.TFPX_RD53ASENSORROC.thickness: 0.400
+geometry.TFPX_RD53ASENSOR.thickness: 0.245
 
 #================================================
 #====== Vision/Pattern Recognition parameters
@@ -307,8 +316,13 @@ vision.ETL_PCB_Mockup.aspectRatioMax: 1.1
 #graph_motion.pos.LABEL: {x,y,z}
 graph_motion.pos.home: {0,0,0}
 graph_motion.pos.module_chuck_0:  {272,494,0}
-
+#graph_motion.pos.safeUnload: {190,90,0}
+#graph_motion.pos.stagingArea: {590,337,0}
+#graph_motion.pos.standAside: {350,150,0}
+#graph_motion.pos.crocStaging: {100,400,0}
+graph_motion.pos.safeUnload: {0,0,0}
 graph_motion.pos.stagingArea: {0,0,0}
+graph_motion.pos.standAside: {0,0,0}
 graph_motion.pos.crocStaging: {0,0,0}
 
 # must be 2mm above tool in z
@@ -346,6 +360,23 @@ graph_motion.edge.etl_chuck_3.tool_rack_pos_2_out: True
 graph_motion.edge.etl_chuck_2.tool_rack_pos_2_out: True
 graph_motion.edge.etl_chuck_1.tool_rack_pos_2_out: True
 
+graph_motion.edge.home.safeUnload: True
+graph_motion.edge.safeUnload.tool_rack_pos_2_out: True
+graph_motion.edge.stagingArea.tool_rack_pos_2_out: True
+#graph_motion.edge.tool_rack_pos_2_out.tool_rack_pos_2_in: True
+#graph_motion.edge.tool_rack_pos_1_out.tool_rack_pos_1_in: True
+graph_motion.edge.tool_rack_pos_1_out.safeUnload: True
+
+graph_motion.edge.standAside.safeUnload: True
+graph_motion.edge.standAside.stagingArea: True
+graph_motion.edge.standAside.tool_rack_pos_2_out: True
+graph_motion.edge.home.crocStaging: True
+graph_motion.edge.safeUnload.crocStaging: True
+
+
+
+
+
 # Connections for ETL chucks
 
 #Safe Roads Connections
@@ -375,14 +406,6 @@ graph_motion.edge.home.crocStaging: True
 #================================================
 
 # default.part_type.chuck_id.pos_id.pos/rot
-#default.ETL_mock_base.3.1.pos: {776.211566,318.647663,78.942527}
-#default.ETL_mock_base.3.1.rot: {0.000487,0.000002,-0.003824,-0.999993}
-
-#default.ETL_Sensor_PCB_Mockup.4.1.pos: {646.167729,110.076103,75.537859}
-#default.ETL_Sensor_PCB_Mockup.4.1.rot: {0.000000,-0.000000,0.002087,0.999998}
-#default.ETL_Sensor_PCB_Mockup.4.2.pos: {698.352939,110.146967,75.706145}
-#default.ETL_Sensor_PCB_Mockup.4.2.rot: {0.001161,0.000101,-0.001915,-0.999997}
-
 
 #================================================
 #====== Potting procedure parameters
@@ -568,4 +591,25 @@ siteGeometry.delta_BOTROC: {0,0,0}
 siteGeometry.dist_dualROC_bondpads: 21.064 #mm
 # Vector from center of the bond pads on one Dual ROC to its center
 siteGeometry.dualROC_bondsToCenter: {9.228,0,0}
+
+
+#==============
+#sensor module#
+#==============
+siteGeometry.pos_SensorROC_launch1_tr: {255.135637,73.695067,73.819091}
+siteGeometry.delta_SensorROC: {0,0,0} # {width, length, 0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

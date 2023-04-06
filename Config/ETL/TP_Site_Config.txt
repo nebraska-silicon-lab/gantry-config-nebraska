@@ -75,15 +75,15 @@ default.LGAD.4.15.rot: {0,0,0,0}
 default.LGAD.4.16.rot: {0,0,0,0} #might of put in wrong angle? if so flip signs for all the 16 ones, otherwise im confident
 
 #top AlN positions #all of these are probably wrong??
-default.ETL_AlN_Baseplate.4.5.pos: {455.575239,318.453326,75.001456}
-default.ETL_AlN_Baseplate.4.5.rot: {-0.002851,-0.000186,0.706562,0.707645}
+default.BP.4.5.pos: {455.575239,318.453326,75.001456}
+default.BP.4.5.rot: {-0.002851,-0.000186,0.706562,0.707645}
 
-default.ETL_AlN_Baseplate.4.6.pos: {455.699393,372.473164,74.957204}
-default.ETL_AlN_Baseplate.4.6.rot: {-0.001867,-0.000264,0.706758,0.707453}
+default.BP.4.6.pos: {455.699393,372.473164,74.957204}
+default.BP.4.6.rot: {-0.001867,-0.000264,0.706758,0.707453}
 
-default.ETL_AlN_Baseplate.4.7.pos: {455.807988,426.431851,74.962502}
-default.ETL_AlN_Baseplate.4.7.rot: {-0.001289,-0.000108,0.706500,0.707712}
+default.BP.4.7.pos: {455.807988,426.431851,74.962502}
+default.BP.4.7.rot: {-0.001289,-0.000108,0.706500,0.707712}
 
-default.ETL_AlN_Baseplate.4.8.pos: {455.942749,480.433468,75.072119}
-default.ETL_AlN_Baseplate.4.8.rot: {-0.000860,-0.000900,0.706716,0.707496}
+default.BP.4.8.pos: {455.942749,480.433468,75.072119}
+default.BP.4.8.rot: {-0.000860,-0.000900,0.706716,0.707496}
 
