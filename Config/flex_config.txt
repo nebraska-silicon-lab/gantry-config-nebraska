@@ -41,6 +41,16 @@ vacuum.etl_chuck_4_pos_14: 9
 vacuum.etl_chuck_4_pos_15: 7
 vacuum.etl_chuck_4_pos_16: 13
 
+#============================
+# addition for CROC
+#============================
+
+vacuum.croc_chuck_0_top: 28
+vacuum.croc_chuck_0_bot: 29
+vacuum.croc_launchROC_top: 30
+vacuum.croc_launchROC_bot: 31
+vacuum.croc_launchHDI: 4
+vacuum.croc_weight_0: 6
 
 
 # vacuum.gelpak_release: 
@@ -135,25 +145,6 @@ geometry.TFPX_RD53AQUARTERROC.fid_br: {5.7635,10.025,0}
 geometry.TFPX_RD53AQUARTERROC.fid_bl: {-5.7635,10.025,0}
 geometry.TFPX_RD53AQUARTERROC.fid_tl: {-5.7635,-10.025,0}
 geometry.TFPX_RD53AQUARTERROC.thickness: 0.505
-
-geometry.ETL_AlN_Baseplate.fid_tr: {28.22,-21.51,0}
-geometry.ETL_AlN_Baseplate.fid_tl: {-28.22,-21.51,0}
-geometry.ETL_AlN_Baseplate.fid_bl: {-28.22,21.51,0}
-geometry.ETL_AlN_Baseplate.fid_br: {28.22,21.51,0}
-
-#OLD? not for throughput
-#geometry.ETL_Sensor_PCB_Mockup.fid_tr: {18.88,-9.14,0}
-#geometry.ETL_Sensor_PCB_Mockup.fid_tl: {-18.88,-9.14,0}
-#geometry.ETL_Sensor_PCB_Mockup.fid_bl: {-18.88,9.14,0}
-#geometry.ETL_Sensor_PCB_Mockup.fid_br: {18.88,9.14,0}
-geometry.ETL_Sensor_PCB_Mockup.size_x: 45
-geometry.ETL_Sensor_PCB_Mockup.size_y: 20
-
-#OLD? not for throughput
-#geometry.ETL_mock_base.fid_tr: {27.25, -20.55, 0}
-#geometry.ETL_mock_base.fid_tl: {-27.25, -20.55, 0}
-#geometry.ETL_mock_base.fid_bl: {-27.25, 20.55, 0}
-#geometry.ETL_mock_base.fid_br: {27.25, 20.55, 0}
 
 #geometry.PICKER_TOOL.center_offset: {0,0,53.6} #small suction cup
 #geometry.PICKER_TOOL.center_offset: {0,0,59.5} #middle suction cup
@@ -275,8 +266,8 @@ geometry.TFPX_RD53ASENSOR.thickness: 0.245
 
 vision.debug_enable: False
 vision.log_directory: C:\Users\cfang\Desktop\nebraska-silicon-lab\pixel-gantry-control\Logs\
-vision.autofocus.step_size: 0.01 # mm
-vision.autofocus.delay: 250 # ms
+vision.autofocus.step_size: 0.075 # mm
+vision.autofocus.delay: 0 # ms
 
 vision.FPIX_HDI.method: find_patches
 vision.FPIX_HDI.shrinkFactor: 4
@@ -500,38 +491,7 @@ weight.horizontal: {30,0,0}
 weight.vertical: {0,0,-50}
 
 
-#============================
-# addition for CROC
-#============================
-#vacuum.croc_chuck_1_top: 4
-#vacuum.croc_chuck_0_top: 4
-#vacuum.croc_chuck_1_bot: 5
-#vacuum.croc_chuck_0_bot: 5
-#vacuum.croc_chuck_2_top: 6
-#vacuum.croc_chuck_2_bot: 8
-#vacuum.croc_launchROC_top: 6
-#vacuum.croc_launchROC_bot: 8
-#vacuum.croc_chuck_3: 9
-#vacuum.croc_launchHDI: 9
-#vacuum.croc_hdipicker: 10
-#vacuum.croc_weight_0: 10
-#vacuum.module_chuck_0_slot_1: 24
-#vacuum.module_chuck_0_slot_2: 18
 
-vacuum.croc_chuck_0_top: 28
-vacuum.croc_chuck_0_bot: 29
-vacuum.croc_chuck_1_top: 28
-vacuum.croc_chuck_1_bot: 29
-vacuum.croc_chuck_2_top: 30
-vacuum.croc_chuck_2_bot: 31
-vacuum.croc_launchROC_top: 0
-vacuum.croc_launchROC_bot: 0
-vacuum.croc_chuck_3: 4
-vacuum.croc_launchHDI: 0
-vacuum.croc_hdipicker: 6
-vacuum.croc_weight_0: 0
-vacuum.module_chuck_0_slot_1: 0
-vacuum.module_chuck_0_slot_2: 0
 
 
 
@@ -555,13 +515,11 @@ geometry.dist_dualROC_bondpads: 21.064 #mm
 
 
 ###Information for the CROC HDI
-siteGeometry.pos_croc_hdi_top1: {285.588,70.773,73.700}
-siteGeometry.pos_croc_hdi_top2: {285.588,113.830,73.700}
+siteGeometry.pos_croc_hdi_top1: {285.574,71.053,73.607}
+siteGeometry.pos_croc_hdi_top2: {285.917,92.875,73.604}
 siteGeometry.dist_hdi_bondpads: 43.040 #mm
 siteGeometry.dist_hdi_half_bondpads: 16.803 #mm
 # CROC HDI pick and place translation vector and rotation angle
-siteGeometry.croc_v_translation: {-100.176,-0.378433,-6.52386}
-siteGeometry.croc_rot_translation: 0.102431
 siteGeometry.croc_v_translation_STAT_0: {-100.176,-0.378433,-6.52386}
 siteGeometry.croc_rot_translation_STAT_0: 0.102431
 
@@ -583,8 +541,8 @@ siteGeometry.pos_croc_BOTGlass_top1: {243.079,89.764,50.000}
 siteGeometry.dist_multiGlass_bondpads: 19.698 #mm
 
 ### Information for the CROC Dual ROC Script
-siteGeometry.pos_croc_TOPROC_top1: {243.079,89.764,50.000}
-siteGeometry.pos_croc_BOTROC_top1: {243.079,89.764,50.000}
+siteGeometry.pos_croc_TOPROC_top1: {234.808,66.902,73.119}
+siteGeometry.pos_croc_BOTROC_top1: {234.663,92.751,73.119}
 siteGeometry.delta_TOPROC: {0,0,0}
 siteGeometry.delta_BOTROC: {0,0,0}
 
