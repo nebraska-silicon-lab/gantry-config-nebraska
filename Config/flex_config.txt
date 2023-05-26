@@ -5,6 +5,8 @@
 enable_imaqdx: True
 
 camera.gantryhead.CameraGroup: 1
+# camera.gantryhead.driver: ueye
+# camera.gantryhead.serial_number: "4103643853"
 camera.gantryhead.driver: imaqdx
 camera.gantryhead.serial_number: "UI327xCP-M_4103643853 |  | 11872060072500839368"
 camera.gantryhead.FOV-x: 1.400
@@ -36,23 +38,23 @@ vacuum.etl_chuck_4_pos_9: 19
 vacuum.etl_chuck_4_pos_10: 17
 vacuum.etl_chuck_4_pos_11: 16
 vacuum.etl_chuck_4_pos_12: 18
-vacuum.etl_chuck_4_pos_13: 11
-vacuum.etl_chuck_4_pos_14: 9
-vacuum.etl_chuck_4_pos_15: 7
-vacuum.etl_chuck_4_pos_16: 13
+vacuum.etl_chuck_4_pos_13: 29 # 11
+vacuum.etl_chuck_4_pos_14: 30 # 9
+vacuum.etl_chuck_4_pos_15: 31 # 7
+vacuum.etl_chuck_4_pos_16: 28 # 13
 
 #============================
 # addition for CROC
 #============================
 
-vacuum.croc_chuck_0_top: 28
-vacuum.croc_chuck_0_bot: 29
-vacuum.croc_chuck_1_top: 28
-vacuum.croc_chuck_1_bot: 29
+vacuum.croc_chuck_0_top: 9 # 28
+vacuum.croc_chuck_0_bot: 7 # 29
+vacuum.croc_chuck_1_top: 9 # 28
+vacuum.croc_chuck_1_bot: 7 # 29
 vacuum.croc_chuck_3: 4
 vacuum.croc_hdipicker : 6
-vacuum.croc_launchROC_top: 30
-vacuum.croc_launchROC_bot: 31
+vacuum.croc_launchROC_top: 11 # 30
+vacuum.croc_launchROC_bot: 13 # 31
 vacuum.croc_launchHDI: 4
 vacuum.croc_weight_0: 6
 
