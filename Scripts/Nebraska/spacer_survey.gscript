@@ -1,0 +1,12 @@
+copy $count 0
+copy $center {478.70,457.76,76.567}
+copy $size_x 3.3
+copy $size_y 16.6
+
+@LOOP_START
+  SURVEY $center $size_x $size_y medium "spacer_{$count}.png"
+  INC $count $count
+  CHOICEPOPUP $answer "Again?"
+  GOTOIF @LOOP_START $answer
+
+END

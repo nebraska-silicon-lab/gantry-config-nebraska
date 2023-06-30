@@ -202,7 +202,7 @@ siteGeometry.pos_BL_ROC_launch2_tr: {241.395,93.527,73.125}
 siteGeometry.pos_TL_ROC_launch2_tr: {241.898,71.202,73.140}
 
 # HDI pick and place translation vector and rotation angle
-siteGeometry.v_hdi_translation: {-50.03,-0.2396,-7.019}
+siteGeometry.v_hdi_translation: {-50.258,-0.2396,-7.019}
 siteGeometry.rot_hdi_translation: -0.01926
 
 # SensorROC translation correctional terms
@@ -526,8 +526,10 @@ siteGeometry.pos_croc_hdi_top2: {285.917,92.875,73.604}
 siteGeometry.dist_hdi_bondpads: 43.040 #mm
 siteGeometry.dist_hdi_half_bondpads: 16.803 #mm
 # CROC HDI pick and place translation vector and rotation angle
-siteGeometry.croc_v_translation_STAT_0: {-100.176,-0.378433,-6.52386}
-siteGeometry.croc_rot_translation_STAT_0: 0.102431
+#siteGeometry.croc_v_translation_STAT_0: {-100.176,-0.378433,-6.52386}
+#siteGeometry.croc_rot_translation_STAT_0: 0.102431
+siteGeometry.croc_v_translation_STAT_0: {-100.191,-0.387502,-6.56005}
+siteGeometry.croc_rot_translation_STAT_0: 0.0986092
 
 
 ### Information for the CROC Single Glass Script
