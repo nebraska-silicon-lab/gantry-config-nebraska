@@ -60,14 +60,13 @@ vacuum.croc_weight_0: 6
 
 
 # vacuum.gelpak_release: 
-
-vacuum.rd53a_chuck_1_TR: 2 # top right
-vacuum.rd53a_chuck_1_BR: 3 # bottom right
-vacuum.rd53a_chuck_1_TL: 1 # top left
-vacuum.rd53a_chuck_1_BL: 0 # bottom left
-vacuum.rd53a_chuck_2: 5
-vacuum.rd53a_chuck_3: 6
-vacuum.launchpad: 4
+#vacuum.rd53a_chuck_1_TR: 2 # top right
+#vacuum.rd53a_chuck_1_BR: 3 # bottom right
+#vacuum.rd53a_chuck_1_TL: 1 # top left
+#vacuum.rd53a_chuck_1_BL: 0 # bottom left
+#vacuum.rd53a_chuck_2: 5
+#vacuum.rd53a_chuck_3: 6
+#vacuum.launchpad: 4
 
 
 manifold.reset_on_start: false
@@ -271,6 +270,8 @@ geometry.TFPX_RD53ASENSOR.thickness: 0.245
 #================================================
 
 vision.debug_enable: False
+vision.findfid_result: popup
+# vision.findfid_result: Logs\
 vision.log_directory: C:\Users\cfang\Desktop\nebraska-silicon-lab\pixel-gantry-control\Logs\
 vision.autofocus.step_size: 0.075 # mm
 vision.autofocus.delay: 0 # ms
@@ -497,10 +498,6 @@ weight.horizontal: {30,0,0}
 weight.vertical: {0,0,-50}
 
 
-
-
-
-
 geometry.TFPX_CROC_MULTIGLASS.fid_tr: {9.214,-10.328,0}
 geometry.TFPX_CROC_MULTIGLASS.fid_br: {9.214,10.328,0}
 geometry.TFPX_CROC_MULTIGLASS.fid_bl: {-9.214,10.328,0}
@@ -518,7 +515,126 @@ geometry.TFPX_CROC_DUALROC.thickness: 0.808
 geometry.dist_dualHDI_bondpads: 21.216 #mm
 geometry.dist_dualROC_bondpads: 21.064 #mm
 
+#########################################
+### CROC 2x2
+#########################################
 
+vacuum.croc2x2_weight_0: 6
+vacuum.croc2x2_launchHDI: 4
+vacuum.croc2x2_launchROC_tr: 11
+vacuum.croc2x2_launchROC_br: 13
+vacuum.croc2x2_launchROC_bl: 7
+vacuum.croc2x2_launchROC_tl: 9
+vacuum.croc2x2_chuck_0_tr: 0
+vacuum.croc2x2_chuck_0_br: 1
+vacuum.croc2x2_chuck_0_bl: 3
+vacuum.croc2x2_chuck_0_tl: 2 
+vacuum.croc2x2_chuck_1: 1
+vacuum.croc2x2_chuck_2: 99
+vacuum.croc2x2_chuck_3: 99
+vacuum.croc2x2_chuck_4: 99 #RELABEL
+vacuum.croc2x2_chuck_0: 99 #RELABEL
+
+ # HDI position data
+#siteGeometry.pos_croc2x2_hdi_TR: {656.953,523.054,100.077}
+#siteGeometry.pos_croc2x2_hdi_TR: {200.362,539.900,79.606}
+
+
+ # HDI position data
+siteGeometry.pos_croc2x2_hdi_TR: {222.236,522.802,79.486}
+
+ # QuadROC position data
+siteGeometry.pos_croc2x2LaunchROC_TR: {150.196,523.204,78.683}
+siteGeometry.pos_croc2x2LaunchROC_BR: {150.196,545.640,78.669}
+siteGeometry.pos_croc2x2LaunchROC_BL: {130.115,544.897,78.689}
+siteGeometry.pos_croc2x2LaunchROC_TL: {130.115,523.061,78.681}
+
+### Quad Sensor ROC Information
+
+ # HDI position data
+
+ # Station 1 data
+siteGeometry.croc2x2_v_translation_STAT_1: {-150.750,-150.769,-6.338} #REMEASURE
+siteGeometry.croc2x2_rot_translation_STAT_1: 0 #REMEASURE
+
+ # Station 2 data
+siteGeometry.croc2x2_v_translation_STAT_2: {-75.965,-150.760,-6.283} #REMEASURE
+siteGeometry.croc2x2_rot_translation_STAT_2: 0 #REMEASURE
+
+ # Station 3 data
+siteGeometry.croc2x2_v_translation_STAT_3: {-1.436,-150.760,-6.063} #REMEASURE
+siteGeometry.croc2x2_rot_translation_STAT_3: 0 #REMEASURE
+
+ # Station 4 data
+siteGeometry.croc2x2_v_translation_STAT_4: {74.254,-148.955,-6.079} #REMEASURE
+siteGeometry.croc2x2_rot_translation_STAT_4: 0 #REMEASURE
+
+
+ # Fine Correction for the Quad ROC Script
+siteGeometry.delta_croc2x2_tr: {0.06,0.1,0} # Default values = {0.06,0.1,0}
+siteGeometry.delta_croc2x2_br: {0.16,0.1,0} # Default values = {0.06,0.1,0}
+siteGeometry.delta_croc2x2_bl: {0.06,0.1,0} # Default values = {0.06,0.1,0}
+siteGeometry.delta_croc2x2_tl: {0.17,0.1,0} # Default values = {0.06,0.1,0}
+
+
+ # Station 0 data
+# siteGeometry.pos_croc2x2_translation_STAT_0: {-149.634,-0.548,-6.800} # Measured on 6/8/2023 by Mahimna and Souvik
+siteGeometry.pos_croc2x2_translation_STAT_0: {-149.610,-0.562,-6.755} # Measured on 7/2/2023 by Mahimna
+# siteGeometry.rot_croc2x2_translation_STAT_0: -0.125108 # Measured on 6/8/2023 by Mahimna and Souvik
+siteGeometry.rot_croc2x2_translation_STAT_0: -0.1213 # Measured on 6/8/2023 by Mahimna
+
+### Quad Sensor ROC Information
+
+ # HDI position data
+
+ # Station 1 data
+siteGeometry.croc2x2_v_translation_STAT_1: {-150.750,-150.769,-6.338} #REMEASURE
+siteGeometry.croc2x2_rot_translation_STAT_1: 0 #REMEASURE
+
+ # Station 2 data
+siteGeometry.croc2x2_v_translation_STAT_2: {-75.965,-150.760,-6.283} #REMEASURE
+siteGeometry.croc2x2_rot_translation_STAT_2: 0 #REMEASURE
+
+ # Station 3 data
+siteGeometry.croc2x2_v_translation_STAT_3: {-1.436,-150.760,-6.063} #REMEASURE
+siteGeometry.croc2x2_rot_translation_STAT_3: 0 #REMEASURE
+
+ # Station 4 data
+siteGeometry.croc2x2_v_translation_STAT_4: {74.254,-148.955,-6.079} #REMEASURE
+siteGeometry.croc2x2_rot_translation_STAT_4: 0 #REMEASURE
+
+
+geometry.TFPX_CROC2X2_HDI.thickness: 0.140
+geometry.TFPX_CROC2X2_QUADROC.thickness: 0.808 
+geometry.dist_quadHDI_bondpads: 0.27 #REMEASURE
+geometry.dist_quadROC_bondpads: 21.064 #REMEASURE
+
+geometry.TFPX_CROC2X2_HDI.fid_tr: {16.703,-21.592,0}
+geometry.TFPX_CROC2X2_HDI.fid_br: {16.703,21.592,0}
+geometry.TFPX_CROC2X2_HDI.fid_bl: {-16.703,21.592,0}
+geometry.TFPX_CROC2X2_HDI.fid_tl: {-16.703,-21.592,0}
+
+geometry.TFPX_CROC2X2_QUADROC.fid_tr: {9.304,-10.820,0}
+geometry.TFPX_CROC2X2_QUADROC.fid_br: {9.304,10.820,0}
+geometry.TFPX_CROC2X2_QUADROC.fid_bl: {-9.304,10.820,0}
+geometry.TFPX_CROC2X2_QUADROC.fid_tl: {-9.304,-10.820,0}
+
+geometry.TFPX_CROC2X2_QUADSENSORROC.fid_tr: {18.795,-22.265,0} #REMEASURE
+geometry.TFPX_CROC2X2_QUADSENSORROC.fid_br: {18.795,22.265,0} #REMEASURE
+geometry.TFPX_CROC2X2_QUADSENSORROC.fid_bl: {-18.795,22.265,0} #REMEASURE
+geometry.TFPX_CROC2X2_QUADSENSORROC.fid_tl: {-18.795,-22.265,0} #REMEASURE
+
+geometry.TFPX_CROC2X2_QUADTHERMALROC.fid_tr: {19.025, -20.784,0}
+geometry.TFPX_CROC2X2_QUADTHERMALROC.fid_br: {19.025, 20.784,0}
+geometry.TFPX_CROC2X2_QUADTHERMALROC.fid_bl: {-19.025, 20.784,0}
+geometry.TFPX_CROC2X2_QUADTHERMALROC.fid_tl: {-19.025, -20.784,0}
+
+# geometry.TFPX_CROC_SENSORROC.thickness: 0.715
+# geometry.TFPX_CROC_SENSOR.thickness: 0.225
+geometry.TFPX_CROC_SENSORROC.thickness: 0.392 # for HPK
+geometry.TFPX_CROC_SENSOR.thickness: 0.225    # for HPK
+geometry.dist_CROC_HDI_bondpads: 42.949
+geometry.dist_sensorROC_bondpads: 43.051
 
 ###Information for the CROC HDI
 siteGeometry.pos_croc_hdi_top1: {285.574,71.053,73.607}
