@@ -21,6 +21,27 @@ light.gantryhead.hardware_address: Y.0
 
 vacuum.gantry_head_outer: 14
 vacuum.gantry_head_inner: 15
+#vacuum.module_chuck_0_slot_1: 4
+#vacuum.module_chuck_0_slot_2: 
+vacuum.etl_chuck_1: 10
+vacuum.etl_chuck_2: 8
+vacuum.etl_chuck_3: 12
+vacuum.etl_chuck_4_pos_1: 20
+vacuum.etl_chuck_4_pos_2: 24
+vacuum.etl_chuck_4_pos_3: 26
+vacuum.etl_chuck_4_pos_4: 22
+vacuum.etl_chuck_4_pos_5: 27
+vacuum.etl_chuck_4_pos_6: 25
+vacuum.etl_chuck_4_pos_7: 23
+vacuum.etl_chuck_4_pos_8: 21
+vacuum.etl_chuck_4_pos_9: 19
+vacuum.etl_chuck_4_pos_10: 17
+vacuum.etl_chuck_4_pos_11: 16
+vacuum.etl_chuck_4_pos_12: 18
+vacuum.etl_chuck_4_pos_13: 29 # 11
+vacuum.etl_chuck_4_pos_14: 30 # 9
+vacuum.etl_chuck_4_pos_15: 31 # 7
+vacuum.etl_chuck_4_pos_16: 28 # 13
 
 #============================
 # addition for CROC
@@ -511,28 +532,34 @@ geometry.dist_dualROC_bondpads: 21.064 #mm
 ### CROC 2x2
 #########################################
 
-vacuum.croc2x2_weight_0: 3
-vacuum.croc2x2_weight_1: 5
-vacuum.croc2x2_weight_2: 7
-vacuum.croc2x2_weight_3: 9
-vacuum.croc2x2_weight_4: 11
-vacuum.croc2x2_launchHDI: 0
-vacuum.croc2x2_launchROC_tr: 1
-vacuum.croc2x2_launchROC_br: 1
-vacuum.croc2x2_launchROC_bl: 1
-vacuum.croc2x2_launchROC_tl: 1
-vacuum.croc2x2_chuck_0_tr: 2
-vacuum.croc2x2_chuck_0_br: 2
-vacuum.croc2x2_chuck_0_bl: 2
+vacuum.croc2x2_weight_0: 6
+vacuum.croc2x2_weight_1: 99
+vacuum.croc2x2_weight_2: 99
+vacuum.croc2x2_weight_3: 99
+vacuum.croc2x2_weight_4: 99
+vacuum.croc2x2_launchHDI: 4
+vacuum.croc2x2_launchROC_tr: 11
+vacuum.croc2x2_launchROC_br: 13
+vacuum.croc2x2_launchROC_bl: 7
+vacuum.croc2x2_launchROC_tl: 9
+vacuum.croc2x2_chuck_0_tr: 0
+vacuum.croc2x2_chuck_0_br: 1
+vacuum.croc2x2_chuck_0_bl: 3
 vacuum.croc2x2_chuck_0_tl: 2 
-vacuum.croc2x2_chuck_1: 4
-vacuum.croc2x2_chuck_2: 6
-vacuum.croc2x2_chuck_3: 8
-vacuum.croc2x2_chuck_4: 10
-vacuum.croc2x2_test: 99
+vacuum.croc2x2_chuck_1: 1
+vacuum.croc2x2_chuck_2: 99
+vacuum.croc2x2_chuck_3: 99
+vacuum.croc2x2_chuck_4: 99 #RELABEL
+vacuum.croc2x2_chuck_0: 99 #RELABEL
+vacuum.croc2x2_test: 5
 
-# HDI position data 
-siteGeometry.pos_croc2x2_hdi_TR: {221.967397,522.459336,79.803872}
+ # HDI position data
+#siteGeometry.pos_croc2x2_hdi_TR: {656.953,523.054,100.077}
+#siteGeometry.pos_croc2x2_hdi_TR: {200.362,539.900,79.606}
+
+
+ # HDI position data
+siteGeometry.pos_croc2x2_hdi_TR: {222.236,522.802,79.486}
 
  # QuadROC position data
 siteGeometry.pos_croc2x2LaunchROC_TR: {150.196,523.204,78.683}
@@ -569,11 +596,12 @@ siteGeometry.delta_croc2x2_tl: {0.17,0.1,0} # Default values = {0.06,0.1,0}
 
 
  # Station 0 data
-#siteGeometry.pos_croc2x2_translation_STAT_0: {-149.658,-0.054,-6.755} # Measured on 12/06/2023 by CJ
-#siteGeometry.rot_croc2x2_translation_STAT_0: -0.00189482 # Measured on 12/06/2023 by CJ
-siteGeometry.pos_croc2x2_translation_STAT_0: {-149.551,-0.043,-6.462} # Measured on 11/20/2024 by CJ
-siteGeometry.rot_croc2x2_translation_STAT_0: 0.001 # Measured on 11/20/2024 by CJ
-
+# siteGeometry.pos_croc2x2_translation_STAT_0: {-149.634,-0.548,-6.800} # Measured on 6/8/2023 by Mahimna and Souvik
+# siteGeometry.pos_croc2x2_translation_STAT_0: {-149.610,-0.562,-6.755} # Measured on 7/2/2023 by Mahimna
+siteGeometry.pos_croc2x2_translation_STAT_0: {-149.658,-0.054,-6.755} # Measured on 12/06/2023 by CJ
+# siteGeometry.rot_croc2x2_translation_STAT_0: -0.125108 # Measured on 6/8/2023 by Mahimna and Souvik
+#siteGeometry.rot_croc2x2_translation_STAT_0: -0.1213 # Measured on 6/8/2023 by Mahimna
+siteGeometry.rot_croc2x2_translation_STAT_0: -0.00189482 # Measured on 12/06/2023 by CJ
 
  # Fine Correction for the Quad Sensor ROC Script
 siteGeometry.delta_QUADSENSORROC: {0,0,0}

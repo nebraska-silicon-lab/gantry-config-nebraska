@@ -569,11 +569,12 @@ siteGeometry.delta_croc2x2_tl: {0.17,0.1,0} # Default values = {0.06,0.1,0}
 
 
  # Station 0 data
-#siteGeometry.pos_croc2x2_translation_STAT_0: {-149.658,-0.054,-6.755} # Measured on 12/06/2023 by CJ
-#siteGeometry.rot_croc2x2_translation_STAT_0: -0.00189482 # Measured on 12/06/2023 by CJ
-siteGeometry.pos_croc2x2_translation_STAT_0: {-149.551,-0.043,-6.462} # Measured on 11/20/2024 by CJ
-siteGeometry.rot_croc2x2_translation_STAT_0: 0.001 # Measured on 11/20/2024 by CJ
-
+# siteGeometry.pos_croc2x2_translation_STAT_0: {-149.634,-0.548,-6.800} # Measured on 6/8/2023 by Mahimna and Souvik
+# siteGeometry.pos_croc2x2_translation_STAT_0: {-149.610,-0.562,-6.755} # Measured on 7/2/2023 by Mahimna
+siteGeometry.pos_croc2x2_translation_STAT_0: {-149.658,-0.054,-6.755} # Measured on 12/06/2023 by CJ
+# siteGeometry.rot_croc2x2_translation_STAT_0: -0.125108 # Measured on 6/8/2023 by Mahimna and Souvik
+#siteGeometry.rot_croc2x2_translation_STAT_0: -0.1213 # Measured on 6/8/2023 by Mahimna
+siteGeometry.rot_croc2x2_translation_STAT_0: -0.00189482 # Measured on 12/06/2023 by CJ
 
  # Fine Correction for the Quad Sensor ROC Script
 siteGeometry.delta_QUADSENSORROC: {0,0,0}

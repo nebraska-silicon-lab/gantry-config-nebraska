@@ -29,7 +29,7 @@ SETERRORMODE prompt
 
 #Rough positions of the top bond pad on the CROC HDI
 FLEXREAD $pos_croc2x2_hdi_TR siteGeometry.pos_croc2x2_hdi_TR
-COPY $pos_final_tr {72.408255,522.425826,73.252496}
+COPY $pos_final_tr {72.51,522.813,73.151}
 
 
 #Dimensions of the HDI set of bond pads
